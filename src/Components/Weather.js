@@ -7,8 +7,8 @@ import { setLoading } from '../redux/slices/loadingSlice'
 const Weather = () => {
 	const [weather, setWeather] = useState()
 	const display = useSelector(selectDisplay)
-    const isLoading = useSelector(state => state.loading.isLoading)
-    const dispatch = useDispatch()
+  const isLoading = useSelector(state => state.loading.isLoading)
+  const dispatch = useDispatch()
 	let latitude = display.capitalInfo.latlng[0]
 	let longitude = display.capitalInfo.latlng[1]
 
